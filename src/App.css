@@ -1,0 +1,272 @@
+/* ///// */
+/* Fonts */
+/* ///// */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* ////////////////////// */
+/* CSS for all Components */
+/* ////////////////////// */
+header {
+  width: 100vw;
+  height: 100px;
+  /* 23E */
+  background-color: #ab2a19;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+p {
+  /* 23D */
+  font-family: Open Sans,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
+
+/* 31C */
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+/* 22C-2, 27D, 27F, 27G */
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shelf_links_background, .bin_links_background, .add_link_background {
+  height: 60px;
+  background: #d34735;
+  border-radius: 3px;
+
+  display: flex;
+  align-items: center;
+  /* 24C */
+  margin-top: 20px;
+}
+
+input {
+  width: 500px;
+  height: 60px;
+  /* 24D */
+  border: 1px solid #ab2a19;
+  border-radius: 3px;
+  font-family: Open Sans,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  /* 24E */
+  padding-left: 13px;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* ////////////////////// */
+/* CSS for Home Component */
+/* ////////////////////// */
+/* 22C-1 */
+#home_header {
+  /* 25F, 27C */
+  display: flex;
+  justify-content: center;
+}
+.home_header_content {
+  width: 500px;
+  display: flex;
+}
+.home_logo {
+  padding-top: 34px;
+  margin-right: 10px;
+}
+
+.home_shelfie_text_container {
+  height: 100%;
+}
+
+.home_shelfie_text {
+  padding-top: 9px;
+  color: white;
+}
+
+.shelf_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shelf_links_background {
+  width: 500px;
+}
+
+.link_text{
+  margin-left: 90px;
+}
+
+/* /////////////////////// */
+/* CSS for Shelf Component */
+/* /////////////////////// */
+.shelf_header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+}
+
+.shelf_logo_container {
+  width: 20vw;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_shelf_name {
+  width: 80vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: #d34735;
+  padding-left: 20px;
+}
+
+.bin_links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bin_links_background {
+  width: 500px;
+}
+
+.add_link_background {
+  width: 500px;
+  background-color: #ffb8af;
+}
+
+.add_link_text {
+  font-family: 'Times New Roman', Times, serif,sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  margin-left: 90px;
+}
+
+/* ///////////////////// */
+/* CSS for Bin Component */
+/* ///////////////////// */
+.bin_header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+}
+
+.bin_logo_container, .bin_header_shelf_name, .bin_header_bin_name {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.bin_logo_container {
+  width: 10vw;
+  justify-content: center;
+}
+
+.bin_header_shelf_name {
+  width: 18.3vw;
+  background: #d34735;
+  padding-left: 20px;
+}
+
+.bin_header_bin_name {
+  width: 71.7vw;
+  background: #ed6b5a;
+  padding-left: 20px;
+}
+
+.bin_edit_fields {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.black_text {
+  width: 500px;
+  margin: 25px 0px 3px 21px;
+  color: black;
+}
+
+.bin_buttons {
+  width: 515px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+
+.bin_edit_button, .bin_save_button, .bin_delete_button {
+  width: 215px;
+  height: 60px;
+  border-radius: 3px;
+  font-family: Open Sans,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+  background-color: #d8d8d8;
+}
+
+.bin_save_button {
+  background-color: #40f99b;
+}
+
+/* ///////////////////// */
+/* CSS for Add Component */
+/* ///////////////////// */
+.add_header {
+  width: 100vw;
+  height: 100px;
+  display: flex;
+}
+
+.add_logo_container, .add_header_shelf_name, .add_header_add_name {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.add_logo_container {
+  width: 10vw;
+  justify-content: center;
+}
+
+.add_header_shelf_name {
+  width: 18.3vw;
+  background: #d34735;
+  padding-left: 25px;
+}
+
+.add_header_add_name {
+  width: 71.7vw;
+  background: #ffb8af;
+  padding-left: 25px;
+}
+
+/* 22C-4 */
+.add_header_add_name p {
+  color: black;
+}
+
+.add_button {
+  width: 517px;
+  height: 60px;
+  border-radius: 3px;
+  margin-top: 22px;
+  font-family: Open Sans,sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  border: none;
+  background-color: #40f99b;
+}
