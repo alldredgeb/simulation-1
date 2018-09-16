@@ -10,7 +10,7 @@ const port = 3006;
 
 //TOP LEVEL MIDDLEWARE
 app.use(bodyParser.json());
-app.use(express.static(__dirname + './../public/build'));
+app.use(express.static(__dirname + '/../build'));
 
 massive(process.env.CONNECTION_STRING).then(function(db) {
   app.set('db', db);
